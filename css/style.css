@@ -1,0 +1,228 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #cb333b;
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rotate {
+
+    transform: rotate(-90deg);
+  
+  
+    /* Legacy vendor prefixes that you probably don't need... */
+  
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+  
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+  
+    /* IE */
+    -ms-transform: rotate(-90deg);
+  
+    /* Opera */
+    -o-transform: rotate(-90deg);
+  
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  
+  }
+  
+/* Start nav Style */
+nav {
+    background-color: #f0f0f0; 
+    height: 70px;
+    display: flex;
+    padding-top: 10px;
+    border-bottom-right-radius: 10% ;
+    border-bottom-left-radius: 10% ;
+    width: 100vw;
+}
+
+nav h2{
+
+    padding: 5px;
+    padding-left: 50px;
+}
+
+nav ul{
+    font-weight: bold;  
+    text-align: right; 
+    padding: 10px;  
+    margin-left: 400px;
+    float: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+/* End nav Style */
+
+/*Start header Style */
+header{
+    display: flex; 
+    background-color: #e6dadb; 
+    margin-top: 20px; 
+    border-radius: 5%;
+}
+
+header img {
+    margin-top: 10px; 
+    margin-left: 20px; 
+    border: 1px solid #9b2026; 
+    border-radius: 50%;
+}
+
+header h1{
+    display: inline-block; 
+    font-size: 70px; 
+    color: rgba(175, 173, 175, 0.664);
+    text-shadow: 0 0 1px #9b2026;
+}
+
+header p {
+    font-family:'Courier New', Courier, monospace; 
+    font-size: 20px; 
+    font-weight: 20; 
+    padding-top: 20px;
+}
+/*End header Style*/ 
+
+/* Start articles Style*/
+div article {
+    border-radius:10% ; 
+    border-right: 20px solid #ffffff; 
+    padding-left: 20px;  
+    padding: 5px; 
+    background-color: rgb(243, 234, 234);
+}
+
+article ul {
+    list-style: square;  
+    padding-top: 10px;
+}
+
+ul h3{
+    margin-top: 5px; 
+    color:rgba(82, 79, 82, 0.664);
+}
+
+ul span {
+    margin-top: 5px;
+}
+
+article div {
+    display: flex; 
+    margin-top: 50px; 
+    padding: 10px;
+}
+
+div img {
+    border:1px solid #000000; 
+    border-radius: 5% ; 
+    display: inline-block;
+}
+
+div h1 {
+    font-size: 30px; 
+    padding-top: 30px;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div h3 {
+    margin-top: 5px; 
+    color:rgb(94, 88, 94); 
+    font-size: 2em;
+}
+/* End article Style*/
+
+/* Start Contact + SM Style */
+article p{
+    font-weight: 1000;  
+    margin: 10px;
+}
+
+article p a {
+    margin: 10px; 
+    font-weight: 200; 
+    color: #e4696f;
+}
+@media (max-width: 1186px) {
+    nav ul{
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 766px) {
+    nav ul{
+        margin-left: 0px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1096px) {
+    header h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 986px) {
+    nav ul{
+        margin-left: 100px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    nav , footer {
+        margin-left: 2vw;
+    }
+
+   header {
+    margin-left: 5vw;
+    }
+
+}
+
+/*
+
+@media (max-width: 830px) {
+    nav ul{
+        margin-left: 10px;
+        padding-left: 3px;
+    }
+
+    header p{
+        font-size: 15px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 696px) {
+    nav{
+        margin: 0px;
+
+    }
+    nav ul{
+        margin-left: 10px;
+        padding: 0px;
+    }
+
+    nav ul a {
+        margin: 0px;
+    }
+
+    nav h2{
+        padding-left: 20px;
+
+    }
+}
+
