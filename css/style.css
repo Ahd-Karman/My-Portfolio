@@ -5,30 +5,24 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+a {
+    text-decoration: none;
+}
 
-.rotate {
+a:hover {
+    font-size: larger;
+    font-weight: bolder;
+    color: #cb333b86;
+}
 
-    transform: rotate(-90deg);
-  
-  
-    /* Legacy vendor prefixes that you probably don't need... */
-  
-    /* Safari */
-    -webkit-transform: rotate(-90deg);
-  
-    /* Firefox */
-    -moz-transform: rotate(-90deg);
-  
-    /* IE */
-    -ms-transform: rotate(-90deg);
-  
-    /* Opera */
-    -o-transform: rotate(-90deg);
-  
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  
-  }
+
+ul {
+    list-style: none;
+}
+
+article li {
+    font-weight: lighter;
+}
   
 /* Start nav Style */
 nav {
@@ -150,6 +144,11 @@ article p a {
     font-weight: 200; 
     color: #e4696f;
 }
+
+/*End Contact Style */
+
+/* Mobile First */
+
 @media (max-width: 1186px) {
     nav ul{
         margin-left: 200px;
@@ -192,37 +191,47 @@ article p a {
 
 }
 
-/*
+/* Animation */
 
-@media (max-width: 830px) {
-    nav ul{
-        margin-left: 10px;
-        padding-left: 3px;
-    }
 
-    header p{
-        font-size: 15px;
-        padding-top: 15px;
-    }
+.rotate:hover {
+    animation-play-state: paused;
 }
 
-@media (max-width: 696px) {
-    nav{
-        margin: 0px;
-
-    }
-    nav ul{
-        margin-left: 10px;
-        padding: 0px;
-    }
-
-    nav ul a {
-        margin: 0px;
-    }
-
-    nav h2{
-        padding-left: 20px;
-
-    }
+.rotate {
+    position: relative;
+    animation: myfirst 3s linear 1s infinite alternate-reverse;
 }
 
+
+@keyframes myfirst {
+    0% {
+        background-color: black;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: rgba(0, 0, 0, 0.548);
+        left: 20px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0.548);
+        left: 20px;
+        top: 20px;
+    }
+
+    75% {
+        background-color: rgba(0, 0, 0, 0.548);
+        left: 0px;
+        top: 20px;
+    }
+
+    100% {
+        background-color: black;
+        left: 0px;
+        top: 0px;
+    }
+}
