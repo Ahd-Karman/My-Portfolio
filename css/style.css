@@ -1,9 +1,14 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #cb333b;
+    color: #201f1f;
     margin: 0px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+body {
+    width: 100vw;
+    background-color: #e6d7cf;
 }
 a {
     text-decoration: none;
@@ -26,39 +31,39 @@ article li {
   
 /* Start nav Style */
 nav {
-    background-color: #f0f0f0; 
+    background-color: #b08a75; 
     height: 70px;
     display: flex;
     padding-top: 10px;
     border-bottom-right-radius: 10% ;
     border-bottom-left-radius: 10% ;
-    width: 100vw;
+    /*width: 100vw;*/
 }
 
 nav h2{
-
     padding: 5px;
     padding-left: 50px;
+    width: 100vw;
 }
 
 nav ul{
     font-weight: bold;  
     text-align: right; 
     padding: 10px;  
-    margin-left: 400px;
-    float: left;
+    width: 100vw;
 }
 
 nav ul li {
     display: inline;
     margin-right: 50px;
+    width: 100vw;
 }
 /* End nav Style */
 
 /*Start header Style */
 header{
     display: flex; 
-    background-color: #e6dadb; 
+    background-color: #8a383b; 
     margin-top: 20px; 
     border-radius: 5%;
 }
@@ -68,13 +73,15 @@ header img {
     margin-left: 20px; 
     border: 1px solid #9b2026; 
     border-radius: 50%;
+    width: auto;
 }
 
 header h1{
     display: inline-block; 
-    font-size: 70px; 
-    color: rgba(175, 173, 175, 0.664);
+    color: #e6d7cf;
+    font-size: 70px;
     text-shadow: 0 0 1px #9b2026;
+    width: 100vw;
 }
 
 header p {
@@ -82,16 +89,16 @@ header p {
     font-size: 20px; 
     font-weight: 20; 
     padding-top: 20px;
+    width: 100vw;
 }
 /*End header Style*/ 
 
 /* Start articles Style*/
 div article {
     border-radius:10% ; 
-    border-right: 20px solid #ffffff; 
-    padding-left: 20px;  
-    padding: 5px; 
-    background-color: rgb(243, 234, 234);
+    background-color: #c3ac9a;
+     margin-left: 0px;
+     text-align: left;
 }
 
 article ul {
@@ -110,8 +117,8 @@ ul span {
 
 article div {
     display: flex; 
-    margin-top: 50px; 
     padding: 10px;
+
 }
 
 div img {
@@ -124,12 +131,18 @@ div h1 {
     font-size: 30px; 
     padding-top: 30px;  
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} 
 
 div h3 {
     margin-top: 5px; 
     color:rgb(94, 88, 94); 
     font-size: 2em;
+}
+
+.previous{
+    width: 500px;
+    margin-left: 50px;
+    margin-bottom: 10px;
 }
 /* End article Style*/
 
@@ -145,9 +158,24 @@ article p a {
     color: #e4696f;
 }
 
+.Contact {
+    display: flex; 
+    margin-top: 20px; 
+    margin-left: 100px; 
+}
+
+footer{
+    background-color: #c4b0b0;
+    height: 200px;
+    padding-top: 10px;
+    border-top-right-radius: 10% ;
+    border-top-left-radius: 10% ;
+    width: 100vw;
+}
+
 /*End Contact Style */
 
-/* Mobile First */
+/* Mobile First 
 
 @media (max-width: 1186px) {
     nav ul{
@@ -190,6 +218,127 @@ article p a {
     }
 
 }
+*/
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    /* some CSS here */
+    nav {
+        width: 100vw;
+    }
+
+    nav h2{
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    nav ul{
+        font-size: 10px;
+    }
+
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1{
+        font-size: 20px;
+        }
+
+    header p {
+            font-size: 10px; 
+    }
+
+    div h1 {
+        font-size: 1em; 
+    } 
+
+    div img {
+        width: 100px;
+        height: 100px;
+    }
+    ul h3{
+        margin-top: 2px; 
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    article ul li {
+        font-size: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul span {
+        font-size: 10px;
+    }
+
+        
+    div h1 {
+        font-size: 10px; 
+    } 
+    
+    .previous {
+        width: 100px;
+    }
+
+    .previous h3 {
+       font-size: 12px;
+    }
+     
+    .Contact {
+        display: block;
+        font-size: small;
+    }
+
+    .Contact h1 {
+        font-size: 8px;
+    }
+    .Contact input {
+        width: 50px;
+        margin: 0px;
+    }
+
+    footer{
+        height: 100px;
+    }
+  }
+  
+  /* #### Mobile Phones Landscape #### */
+  @media screen and (max-device-width: 640px) and (orientation: landscape){
+    /* some CSS here */
+  }
+  
+  /* #### Mobile Phones Portrait or Landscape #### */
+  @media screen and (max-device-width: 640px){
+    /* some CSS here */
+  }
+  
+  /* #### iPhone 4+ Portrait or Landscape #### */
+  @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+    /* some CSS here */
+  }
+  
+  /* #### iPhone 5 Portrait or Landscape #### */
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+    /* some CSS here */
+  }
+  
+  /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+  @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+    /* some CSS here */
+  }
+  
+  /* #### Tablets Portrait or Landscape #### */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    /* some CSS here */
+  }
+  
+  /* #### Desktops #### */
+  @media screen and (min-width: 1024px){
+    /* some CSS here */
+  }
 
 /* Animation */
 
@@ -206,7 +355,7 @@ article p a {
 
 @keyframes myfirst {
     0% {
-        background-color: black;
+        background-color: #201f1f;
         left: 0px;
         top: 0px;
     }
@@ -230,7 +379,7 @@ article p a {
     }
 
     100% {
-        background-color: black;
+        background-color: #201f1f;
         left: 0px;
         top: 0px;
     }
