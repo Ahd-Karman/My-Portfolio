@@ -4,11 +4,11 @@
     margin: 0px;
     margin-left: 5px;
     margin-right: 5px;
+    
 }
 
 body {
-    width: 100vw;
-    background-color: #e6d7cf;
+    background-color: #24292f;
 }
 a {
     text-decoration: none;
@@ -31,7 +31,7 @@ article li {
   
 /* Start nav Style */
 nav {
-    background-color: #b08a75; 
+    background-color: #f6f8fa; 
     height: 70px;
     display: flex;
     padding-top: 10px;
@@ -96,7 +96,7 @@ header p {
 /* Start articles Style*/
 div article {
     border-radius:10% ; 
-    background-color: #c3ac9a;
+    background-color:  #f6f8fa;
      margin-left: 0px;
      text-align: left;
 }
@@ -165,9 +165,10 @@ article p a {
 }
 
 footer{
-    background-color: #c4b0b0;
-    height: 200px;
-    padding-top: 10px;
+    background-color:
+    #8a383b;
+    height: 100px;
+    margin-top: 10px;
     border-top-right-radius: 10% ;
     border-top-left-radius: 10% ;
     width: 100vw;
@@ -236,6 +237,9 @@ footer{
         font-size: 10px;
     }
 
+    nav ul li {
+        margin-right: 20px;
+    }
 
     header img {
         width: 100px;
