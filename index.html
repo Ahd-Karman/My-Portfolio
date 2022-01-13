@@ -8,6 +8,7 @@
     <title>Ahd Karman</title>
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -103,26 +104,49 @@
         <article>
             <h1 id="Contact" style=" text-align: left;"> Contact us </h1>
             <form action="" method="post">
-                <label style="padding: 10px; margin-top: 20px;"> Email for Contacting: </label>
-                <br>
-                <input type="email" placeholder="Email" id ="email" style="margin: 10px;">
+                 <div>
+                    <label style="padding: 10px; margin-top: 20px;"> Email for Contacting: </label>
+                    <br>
+                    <input type="email" placeholder="Email" id ="email" style="margin: 10px;">
+                </div>
 
+                <div class="messageBox">
+                    <label for="message">Request</label><br>
+                    <textarea id="message" cols="80" rows="8" required
+                              placeholder="Type your message here."></textarea>
+                  </div>
+                  <pre id="error"></pre>
                 <input type="button" value=" Send" id="check"
                     style="background-color: rgb(255, 255, 255) ; border: 2px solid darkslategray; border-radius: 30%; height: 3em;font-weight: bold; margin: 20px;">
             </form>
 
             <script>
-              
+                var ch = document.getElementById("check") ;
+                var email = document.getElementById("email") ;
+
+                ch.addEventListener("click" , function()
+                    {
+                       for(var i = 0 ; i < email.value.length ; i++) {
+                           if (email.value[i] === "@")
+                           return ;
+                          else {
+                              if(i == email.value.length-1 )
+                               document.getElementById("error").innerHTML = " <b> Invalid Email ! </b> "; 
+                           }
+                       }
+                    }
+                )
+                
             </script>
         </article>
 
 
         <article>
-            <h1 style=" color:rgb(42, 34, 51); text-shadow: 0 0 1px rgb(7, 7, 32); text-align: center; margin: 10px;">
+            <h1 style="  text-align: center; margin: 10px;">
                 Social Media </h1>
-            <p> Facebook: <a href="https://www.facebook.com/A2Kar/"> Click Here </a> </p>
-            <p> Twitter: <a href="https://twitter.com/ahdkarman"> Click Here </a> </p>
-            <p> LinkedIn: <a href="https://www.linkedin.com/in/ahd-karman/"> Click Here </a> </p>
+            <p> 'Facebook:' <a href="https://www.facebook.com/A2Kar/"> Click Here </a> </p>
+            <p> 'Twitter:' <a href="https://twitter.com/ahdkarman"> Click Here </a> </p>
+            <p> 'LinkedIn: ' <a href="https://www.linkedin.com/in/ahd-karman/"> Click Here </a> </p>
         </article>
     </div>
     <footer>
