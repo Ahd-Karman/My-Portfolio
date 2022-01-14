@@ -81,7 +81,6 @@ header h1{
     color: #e6d7cf;
     font-size: 70px;
     text-shadow: 0 0 1px #9b2026;
-    width: 100vw;
 }
 
 header p {
@@ -89,7 +88,6 @@ header p {
     font-size: 20px; 
     font-weight: 20; 
     padding-top: 20px;
-    width: 100vw;
 }
 /*End header Style*/ 
 
